@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="issues">
+    <option name="index">
+      <map>
+        <entry key="/Dummy.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/a.dummy">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/fragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../18plus.DEPOSIT_ORG/dul-common/src/main/java/com/sbt/dul/common/DULCodesConstants.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../18plus.DEPOSIT_ORG/dul-ekpit-dict-ref/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../18plus.DEPOSIT_ORG/dul-ekpit-dict-ref/src/main/java/Constants.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../18plus.DEPOSIT_ORG/dul-ekpit-dict-ref/src/main/java/MyApp.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../18plus.DEPOSIT_ORG/dul-ekpit-dict-ref/src/main/java/Param.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../18plus.DEPOSIT_ORG/dul-ekpit-dict-ref/src/main/java/ParameterList.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../18plus.DEPOSIT_ORG/dul-ekpit-dict-ref/src/main/java/Parser.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../18plus.DEPOSIT_ORG/dul-ekpit-dict-ref/src/main/java/com/sbt/dul/MyApp.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../18plus.DEPOSIT_ORG/dul-ekpit-dict-ref/src/main/java/com/sbt/dul/constants/Constants.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../18plus.DEPOSIT_ORG/dul-ekpit-dict-ref/src/main/java/com/sbt/dul/constants/ParameterFieldConstant.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../18plus.DEPOSIT_ORG/dul-ekpit-dict-ref/src/main/java/com/sbt/dul/entities/BusinessParameters.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../18plus.DEPOSIT_ORG/dul-ekpit-dict-ref/src/main/java/com/sbt/dul/entities/Param.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../18plus.DEPOSIT_ORG/dul-ekpit-dict-ref/src/main/java/com/sbt/dul/entities/ParameterList.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../18plus.DEPOSIT_ORG/dul-ekpit-dict-ref/src/main/java/com/sbt/dul/entities/TemplateParameterList.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../18plus.DEPOSIT_ORG/dul-ekpit-dict-ref/src/main/java/com/sbt/dul/entities/TemplateParameters.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../18plus.DEPOSIT_ORG/dul-ekpit-dict-ref/src/main/java/com/sbt/dul/entities/Type.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../18plus.DEPOSIT_ORG/dul-ekpit-dict-ref/src/main/java/com/sbt/dul/entities/TypeList.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../18plus.DEPOSIT_ORG/dul-ekpit-dict-ref/src/main/java/com/sbt/dul/utils/Parser.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../18plus.DEPOSIT_ORG/dul-module/distrib-assembly.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../18plus.DEPOSIT_ORG/dul-module/src/main/java/com/sbt/dul/actions/CreateDulProductAction.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../18plus.DEPOSIT_ORG/dul-module/src/main/java/com/sbt/dul/actions/FillNSOProductAction.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../18plus.DEPOSIT_ORG/dul-module/src/main/java/com/sbt/dul/actions/FillProductAction.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../18plus.DEPOSIT_ORG/dul-module/src/main/resources/public/templates/index_template.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../18plus.DEPOSIT_ORG/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/LogChanger-master/src/ru/sbt/corp/Main.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../myapp/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

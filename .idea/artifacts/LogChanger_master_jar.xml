@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="LogChanger-master:jar">
+    <output-path>$PROJECT_DIR$/target/artifacts/LogChanger_master_jar</output-path>
+    <root id="archive" name="LogChanger-master.jar">
+      <element id="module-output" name="LogChanger-master" />
+    </root>
+  </artifact>
+</component>

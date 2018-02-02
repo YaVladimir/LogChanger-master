@@ -1,0 +1,462 @@
+2018-02-01 04:22:59 [WARN ] [com.sbt.dul.impl.MigrationService] [[dul-module]-server-rejected-thread-26] - Начало обработки события, полученного от миграционного модуля
+2018-02-01 04:22:59 [DEBUG] [com.sbt.dul.utils.Utils] [[dul-module]-server-rejected-thread-26] - Получение результата выполнения API
+2018-02-01 04:22:59 [WARN ] [com.sbt.dul.impl.MigrationService] [[dul-module]-server-rejected-thread-26] - Запуск сервиса "Закрытие"
+2018-02-01 04:22:59 [WARN ] [com.sbt.dul.maintenance.MaintenanceDUL] [[dul-module]-server-rejected-thread-26] - 
++++++++++++++++
+Запуск сервиса закрытия. ID продукта: -9223372036854766587
++++++++++++++++
+
+2018-02-01 04:22:59 [DEBUG] [com.sbt.dul.maintenance.MaintenanceDUL] [[dul-module]-server-rejected-thread-26] -  bgpRepositoryInfoJson= {"bgpRepositoryId":0,"bgpJournalId":null,"serviceCode":"MANUAL_START","startDate":1517448179560,"endDate":1517448179560,"previousServiceAppId":null,"broken":false}
+2018-02-01 04:22:59 [DEBUG] [com.sbt.dul.maintenance.MaintenanceDUL] [[dul-module]-server-rejected-thread-26] - Запуск сервиса закрытия
+2018-02-01 04:23:02 [DEBUG] [com.sbt.dul.utils.Utils] [[dul-module]-server-rejected-thread-26] - Получение результата выполнения API
+2018-02-01 04:23:02 [DEBUG] [com.sbt.dul.utils.Utils] [[dul-module]-server-rejected-thread-26] - Получение результата выполнения API
+2018-02-01 04:23:02 [WARN ] [com.sbt.dul.maintenance.MaintenanceDUL] [[dul-module]-server-rejected-thread-26] - [-9223372036854775666] >>> запуск сервиса на КБТ
+2018-02-01 04:23:05 [WARN ] [com.sbt.dul.utils.AbstractActionAdapter] [[dul-module]-server-rejected-thread-1] - [-9223372036854775668] : com.sbt.dul.actions.SendMessageToEKSAction : 1 : 1083322271787756950 : null 
+IN ====> productId = UID[id = 772930286097465377, appId = -9223372036854766587, idMDMP = null, partition = TypedUID[class = com.sbt.bm.ucp.published.api.common.PublishedParty, UID[id = 772930286047585378, appId = 1083322271787756950, idMDMP = null, partition = TypedUID[class = com.sbt.bm.ucp.published.api.dictionary.PublishedServiceZone, UID[id = 1, appId = 1, idMDMP = 1, partition = ]]]]] 
+
+2018-02-01 04:23:05 [WARN ] [com.sbt.dul.utils.AbstractActionAdapter] [[dul-module]-server-rejected-thread-1] - [-9223372036854775666] : com.sbt.dul.actions.GetCurrentODAction : 1 : 1083322271787756950 : -9223372036854766587 Action: GetCurrentODAction start.
+2018-02-01 04:23:06 [DEBUG] [com.sbt.dul.utils.Utils] [[dul-module]-server-rejected-thread-1] - Получение результата выполнения API
+2018-02-01 04:23:06 [WARN ] [com.sbt.dul.utils.AbstractActionAdapter] [[dul-module]-server-rejected-thread-1] - [-9223372036854775666] : com.sbt.dul.actions.GetCurrentODAction : 1 : 1083322271787756950 : -9223372036854766587 subdivisionCodeGosb = 138595
+2018-02-01 04:23:06 [INFO ] [com.sbt.dul.utils.Utils] [[dul-module]-server-rejected-thread-1] - subdivisionCodeGOSB = "138595"
+2018-02-01 04:23:06 [DEBUG] [com.sbt.dul.utils.Utils] [[dul-module]-server-rejected-thread-1] -  currentOperDayDTO gosb138595    getErrorText:(rqId = a5396037-5f39-4510-bc48-d2da3c26417b) Для указанного кода ТЕ = 138595 не найден ОД в статусе Открыт.Текущий,getSuccessStatus:false,  getCurrentOperDay():null
+2018-02-01 04:23:06 [WARN ] [com.sbt.dul.utils.Utils] [[dul-module]-server-rejected-thread-1] - Не удалось получить текущий опер. день от UOD
+2018-02-01 04:23:06 [WARN ] [com.sbt.dul.utils.AbstractActionAdapter] [[dul-module]-server-rejected-thread-1] - [-9223372036854775666] : com.sbt.dul.actions.GetCurrentODAction : 1 : 1083322271787756950 : -9223372036854766587 CurrentOD=null
+2018-02-01 04:23:06 [WARN ] [com.sbt.dul.utils.AbstractActionAdapter] [[dul-module]-server-rejected-thread-1] - [-9223372036854775666] : com.sbt.dul.actions.GetCurrentODAction : 1 : 1083322271787756950 : -9223372036854766587 Action: GetCurrentODAction successfully completed.
+2018-02-01 04:23:06 [WARN ] [com.sbt.dul.utils.AbstractActionAdapter] [[dul-module]-server-rejected-thread-1] - [-9223372036854775666] : com.sbt.dul.actions.GetCurrentODAction : 1 : 1083322271787756950 : -9223372036854766587 
+OUT <==== currentOperDayDul = null 
+
+2018-02-01 04:23:11 [WARN ] [com.sbt.dul.utils.AbstractActionAdapter] [[dul-module]-server-rejected-thread-26] - [-9223372036854775668] : com.sbt.dul.actions.SendEndServiceToAEAction : 1 : 1083322271787756950 : null 
+IN ====> productId = UID[id = 772930286097465377, appId = -9223372036854766587, idMDMP = null, partition = TypedUID[class = com.sbt.bm.ucp.published.api.common.PublishedParty, UID[id = 772930286047585378, appId = 1083322271787756950, idMDMP = null, partition = TypedUID[class = com.sbt.bm.ucp.published.api.dictionary.PublishedServiceZone, UID[id = 1, appId = 1, idMDMP = 1, partition = ]]]]] 
+
+2018-02-01 04:23:11 [WARN ] [com.sbt.dul.utils.AbstractActionAdapter] [[dul-module]-server-rejected-thread-26] - [-9223372036854775666] : com.sbt.dul.actions.CloseFillContextAction : 1 : 1083322271787756950 : -9223372036854766587 Action: CloseFillContextAction start.
+2018-02-01 04:23:12 [DEBUG] [com.sbt.dul.utils.Utils] [[dul-module]-server-rejected-thread-26] - Получение результата выполнения API
+2018-02-01 04:23:12 [INFO ] [com.sbt.dul.utils.Utils] [[dul-module]-server-rejected-thread-26] - Не найден сервис DULrecallDepService
+2018-02-01 04:23:12 [WARN ] [com.sbt.dul.utils.AbstractActionAdapter] [[dul-module]-server-rejected-thread-26] - [-9223372036854775666] : com.sbt.dul.actions.CloseFillContextAction : 1 : 1083322271787756950 : -9223372036854766587 Action: CloseFillContextAction successfully completed.
+2018-02-01 04:23:12 [WARN ] [com.sbt.dul.utils.AbstractActionAdapter] [[dul-module]-server-rejected-thread-26] - [-9223372036854775666] : com.sbt.dul.actions.CloseFillContextAction : 1 : 1083322271787756950 : -9223372036854766587 
+OUT <==== dateEndDUL = Wed Feb 07 00:00:00 MSK 2018 
+OUT <==== dateRecallDul = null 
+OUT <==== productStatusCode = productParty_dulOpened 
+OUT <==== curBalance = 0 
+OUT <==== summaDUL = 1 
+OUT <==== isRecalcEvent = false 
+
+2018-02-01 04:23:17 [WARN ] [com.sbt.dul.utils.AbstractActionAdapter] [[dul-module]-server-rejected-thread-40] - [-9223372036854775666] : com.sbt.dul.actions.GetCurrentODAction : 1 : 1083322271787756950 : -9223372036854766587 
+IN ====> productId = UID[id = 772930286097465377, appId = -9223372036854766587, idMDMP = null, partition = TypedUID[class = com.sbt.bm.ucp.published.api.common.PublishedParty, UID[id = 772930286047585378, appId = 1083322271787756950, idMDMP = null, partition = TypedUID[class = com.sbt.bm.ucp.published.api.dictionary.PublishedServiceZone, UID[id = 1, appId = 1, idMDMP = 1, partition = ]]]]] 
+IN ====> registerTypeCode = DEP_PERCENT_UL 
+
+2018-02-01 04:23:17 [WARN ] [com.sbt.dul.utils.AbstractActionAdapter] [[dul-module]-server-rejected-thread-40] - [-9223372036854775666] : com.sbt.dul.actions.DULFillCtxGraphRegistrAction : 1 : 1083322271787756950 : -9223372036854766587 Action: FillCtxGraphRegistrAction start.
+2018-02-01 04:23:17 [WARN ] [com.sbt.dul.utils.AbstractActionAdapter] [[dul-module]-server-rejected-thread-40] - [-9223372036854775666] : com.sbt.dul.actions.DULFillCtxGraphRegistrAction : 1 : 1083322271787756950 : -9223372036854766587 Action: FillCtxGraphRegistrAction successfully completed.
+2018-02-01 04:23:17 [WARN ] [com.sbt.dul.utils.AbstractActionAdapter] [[dul-module]-server-rejected-thread-40] - [-9223372036854775666] : com.sbt.dul.actions.DULFillCtxGraphRegistrAction : 1 : 1083322271787756950 : -9223372036854766587 
+OUT <==== registerId = UID[id = 772930286097465379, appId = -9223372036854766391, idMDMP = null, partition = TypedUID[class = com.sbt.bm.ucp.published.api.common.PublishedParty, UID[id = 772930286047585378, appId = 1083322271787756950, idMDMP = null, partition = TypedUID[class = com.sbt.bm.ucp.published.api.dictionary.PublishedServiceZone, UID[id = 1, appId = 1, idMDMP = 1, partition = ]]]]] 
+OUT <==== registerDate = Thu Feb 01 04:23:17 MSK 2018 
+
+2018-02-01 04:23:20 [WARN ] [com.sbt.dul.utils.AbstractActionAdapter] [[dul-module]-server-rejected-thread-11] - [-9223372036854775666] : com.sbt.dul.actions.CloseFillContextAction : 1 : 1083322271787756950 : -9223372036854766587 
+IN ====> registerId = UID[id = 772930286097465379, appId = -9223372036854766391, idMDMP = null, partition = TypedUID[class = com.sbt.bm.ucp.published.api.common.PublishedParty, UID[id = 772930286047585378, appId = 1083322271787756950, idMDMP = null, partition = TypedUID[class = com.sbt.bm.ucp.published.api.dictionary.PublishedServiceZone, UID[id = 1, appId = 1, idMDMP = 1, partition = ]]]]] 
+IN ====> registerStatusCode = productRegister_dulClosed 
+IN ====> registerNum = null 
+IN ====> registerDate = null 
+
+2018-02-01 04:23:20 [WARN ] [com.sbt.dul.utils.AbstractActionAdapter] [[dul-module]-server-rejected-thread-11] - [-9223372036854775666] : com.sbt.dul.actions.UpdateRegisterAction : 1 : 1083322271787756950 : -9223372036854766587 Action: UpdateRegister start.
+2018-02-01 04:23:20 [ERROR] [com.sbt.dul.utils.AbstractActionAdapter] [[dul-module]-server-rejected-thread-11] - [-9223372036854775666] : com.sbt.dul.actions.UpdateRegisterAction : 1 : 1083322271787756950 : -9223372036854766587 Action: UpdateRegister failed. Exception: IllegalArgumentException, message Parameter registerDate is null
+java.lang.IllegalArgumentException: Parameter registerDate is null
+	at com.sbt.dul.utils.AbstractActionAdapter.checkParameterAndBrakeIfNull(AbstractActionAdapter.java:131)
+	at com.sbt.dul.actions.UpdateRegisterAction.setParamRegister(UpdateRegisterAction.java:94)
+	at com.sbt.dul.actions.UpdateRegisterAction.action(UpdateRegisterAction.java:60)
+	at com.sbt.dul.utils.AbstractActionAdapter.startAction(AbstractActionAdapter.java:155)
+	at com.sbt.dul.actions.UpdateRegisterAction.before(UpdateRegisterAction.java:114)
+	at com.sbt.dul.utils.AbstractActionAdapter.execute(AbstractActionAdapter.java:139)
+	at com.sbt.cdm.impl.service.action.execution.manager.ActionExecutionManager.startAction(ActionExecutionManager.java:255)
+	at com.sbt.cdm.impl.service.action.execution.manager.ActionExecutionManager.executeAction(ActionExecutionManager.java:180)
+	at com.sbt.cdm.impl.service.action.execution.manager.ActionExecutionManager.execute(ActionExecutionManager.java:104)
+	at com.sbt.cdm.impl.service.action.execution.sync.SyncActionExecutionManager.execute(SyncActionExecutionManager.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.sbt.core.transport.utils.CBLUtils.changeClassLoaderAndInvoke(CBLUtils.java:17)
+	at com.sbt.core.transport.server.TransportServiceExporter.invoke(TransportServiceExporter.java:248)
+	at com.sbt.core.transport.server.TransportServiceExporter.onMessage(TransportServiceExporter.java:109)
+	at com.sbt.core.transport.rpc.impl.RpcExecutorImpl.handleMessage(RpcExecutorImpl.java:131)
+	at com.sbt.core.transport.rpc.impl.RpcExecutorImpl.handleMessage(RpcExecutorImpl.java:151)
+	at sun.reflect.GeneratedMethodAccessor1020.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322)
+	at com.google.common.eventbus.AsyncEventBus.access$001(AsyncEventBus.java:34)
+	at com.google.common.eventbus.AsyncEventBus$1.run(AsyncEventBus.java:117)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2018-02-01 04:24:57 [ERROR] [com.sbt.dul.maintenance.MaintenanceDUL] [[dul-module]-server-rejected-thread-26] - [-9223372036854775666] ошибка: <serviceExecutionError>:  In Orchestrator step CallTimeout
+2018-02-01 04:28:57 [ERROR] [com.sbt.dul.maintenance.MaintenanceDUL] [[dul-module]-server-rejected-thread-26] - UID[id = 772930286097465377, appId = -9223372036854766587, idMDMP = null, partition = TypedUID[class = com.sbt.bm.ucp.published.api.common.PublishedParty, UID[id = 772930286047585378, appId = 1083322271787756950, idMDMP = null, partition = TypedUID[class = com.sbt.bm.ucp.published.api.dictionary.PublishedServiceZone, UID[id = 1, appId = 1, idMDMP = 1, partition = ]]]]]:obj is null Сервис DULCloseServiceClassicOnlineIP не отработал.
+com.sbt.core.amqp.exceptions.TransportTimeoutException: Execution timeout. message.id: 20f1a690-0b7d-4211-8c98-f0f8f473900e
+	at com.sbt.core.transport.rpc.impl.RpcInvokerImpl$SyncReply.getResult(RpcInvokerImpl.java:773)
+	at com.sbt.core.transport.rpc.impl.RpcInvokerImpl.callRemoteMethod(RpcInvokerImpl.java:217)
+	at com.sbt.core.transport.client.TransportRequestInterceptor$TransportRequest.execute(TransportRequestInterceptor.java:107)
+	at com.sbt.dul.utils.apiwrappers.CdmApiWrapper.getPerformedService(CdmApiWrapper.java:162)
+	at com.sbt.dul.maintenance.MaintenanceDUL.safeRunService(MaintenanceDUL.java:893)
+	at com.sbt.dul.maintenance.MaintenanceDUL.safePrepareSCandRunService(MaintenanceDUL.java:808)
+	at com.sbt.dul.maintenance.MaintenanceDUL.safePrepareSCandRunService(MaintenanceDUL.java:776)
+	at com.sbt.dul.maintenance.MaintenanceDUL.prepareAndRunCloseDULbyEndPeriod(MaintenanceDUL.java:761)
+	at com.sbt.dul.impl.MigrationService.prepareAndRunCloseService(MigrationService.java:177)
+	at com.sbt.dul.impl.MigrationService.choseAndRunService(MigrationService.java:355)
+	at com.sbt.dul.impl.MigrationService.sendToReceiver(MigrationService.java:98)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.sbt.core.transport.utils.CBLUtils.changeClassLoaderAndInvoke(CBLUtils.java:17)
+	at com.sbt.core.transport.server.TransportServiceExporter.invoke(TransportServiceExporter.java:248)
+	at com.sbt.core.transport.server.TransportServiceExporter.onMessage(TransportServiceExporter.java:109)
+	at com.sbt.core.transport.rpc.impl.RpcExecutorImpl.handleMessage(RpcExecutorImpl.java:131)
+	at com.sbt.core.transport.rpc.impl.RpcExecutorImpl.handleMessage(RpcExecutorImpl.java:151)
+	at sun.reflect.GeneratedMethodAccessor915.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322)
+	at com.google.common.eventbus.AsyncEventBus.access$001(AsyncEventBus.java:34)
+	at com.google.common.eventbus.AsyncEventBus$1.run(AsyncEventBus.java:117)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2018-02-01 04:28:57 [ERROR] [com.sbt.dul.maintenance.MaintenanceDUL] [[dul-module]-server-rejected-thread-26] - Сервис DULCloseServiceClassicOnlineIP не отработал на продукте UID[id = 772930286097465377, appId = -9223372036854766587, idMDMP = null, partition = TypedUID[class = com.sbt.bm.ucp.published.api.common.PublishedParty, UID[id = 772930286047585378, appId = 1083322271787756950, idMDMP = null, partition = TypedUID[class = com.sbt.bm.ucp.published.api.dictionary.PublishedServiceZone, UID[id = 1, appId = 1, idMDMP = 1, partition = ]]]]].
+2018-02-01 09:38:15 [INFO ] [com.sbt.dul.utils.Utils] [[dul-module]-server-rejected-thread-33] - Выбрали 3 продуктов за время - 678472
+2018-02-01 09:38:15 [DEBUG] [com.sbt.dul.controllers.ProductListController] [[dul-module]-server-rejected-thread-33] -    products.asList()= 3
+2018-02-01 09:38:15 [INFO ] [com.sbt.dul.utils.Utils] [[dul-module]-server-rejected-thread-28] - Выбрали 3 запросов за время - 44235051
+2018-02-01 09:38:15 [INFO ] [com.sbt.dul.controllers.ClientRequestListController] [[dul-module]-server-rejected-thread-28] - Обработали запросы
+2018-02-01 09:38:15 [INFO ] [com.sbt.dul.controllers.GroupService] [pool-416-thread-5] - Поиск профилей клиента по id = 1083322271787756950
+2018-02-01 09:38:15 [INFO ] [com.sbt.dul.controllers.GroupService] [pool-416-thread-8] - Поиск профилей клиента по id = 1083322271787756950
+2018-02-01 09:38:15 [DEBUG] [com.sbt.dul.controllers.ClientRequestListController] [[dul-module]-server-rejected-thread-28] -  Ошибка ClientRequestListController.getClientRequestList
+java.util.concurrent.ExecutionException: com.sbt.core.amqp.exceptions.UnavailableServiceException: No resources on destination module: [ucp] on node: [grid1381], to process message with messageId: e782f39b-8fce-44bd-8291-a7af4d1dbeef
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1895)
+	at com.sbt.dul.controllers.ClientRequestListController.getClientRequestList(ClientRequestListController.java:76)
+	at sun.reflect.GeneratedMethodAccessor1922.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.sbt.pprb.azimuth.mvc.gateways.azimuth.DispatchForm.init(DispatchForm.java:73)
+	at sun.reflect.GeneratedMethodAccessor1663.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:209)
+	at com.sbt.azimuth.module.services.FormMethodHandler.invokeFormMethod(FormMethodHandler.java:472)
+	at com.sbt.azimuth.module.services.FormMethodHandler.handleMethod(FormMethodHandler.java:108)
+	at com.sbt.azimuth.module.api.impl.AzimuthModelProviderImpl.getForm(AzimuthModelProviderImpl.java:148)
+	at sun.reflect.GeneratedMethodAccessor1662.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.sbt.core.transport.utils.CBLUtils.changeClassLoaderAndInvoke(CBLUtils.java:17)
+	at com.sbt.core.transport.server.TransportServiceExporter.invoke(TransportServiceExporter.java:248)
+	at com.sbt.core.transport.server.TransportServiceExporter.onMessage(TransportServiceExporter.java:109)
+	at com.sbt.core.transport.rpc.impl.RpcExecutorImpl.handleMessage(RpcExecutorImpl.java:131)
+	at com.sbt.core.transport.rpc.impl.RpcExecutorImpl.handleMessage(RpcExecutorImpl.java:151)
+	at sun.reflect.GeneratedMethodAccessor915.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322)
+	at com.google.common.eventbus.AsyncEventBus.access$001(AsyncEventBus.java:34)
+	at com.google.common.eventbus.AsyncEventBus$1.run(AsyncEventBus.java:117)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.sbt.core.amqp.exceptions.UnavailableServiceException: No resources on destination module: [ucp] on node: [grid1381], to process message with messageId: e782f39b-8fce-44bd-8291-a7af4d1dbeef
+	at com.sbt.core.transport.server.TransportServiceExporter.onRejectedMessage(TransportServiceExporter.java:154)
+	at com.sbt.core.transport.rpc.impl.RpcExecutorImpl.handleRejectedMessage(RpcExecutorImpl.java:183)
+	at sun.reflect.GeneratedMethodAccessor1575.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322)
+	at com.google.common.eventbus.AsyncEventBus.access$001(AsyncEventBus.java:34)
+	at com.google.common.eventbus.AsyncEventBus$1.run(AsyncEventBus.java:117)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+	at org.springframework.remoting.support.RemoteInvocationUtils.fillInClientStackTraceIfPossible(RemoteInvocationUtils.java:45)
+	at com.sbt.core.transport.commons.rpc.MethodInvocationResult.recreate(MethodInvocationResult.java:57)
+	at com.sbt.core.transport.rpc.impl.RpcInvokerImpl.recreateResult(RpcInvokerImpl.java:1332)
+	at com.sbt.core.transport.rpc.impl.RpcInvokerImpl.access$2900(RpcInvokerImpl.java:53)
+	at com.sbt.core.transport.rpc.impl.RpcInvokerImpl$SyncReply.getResult(RpcInvokerImpl.java:789)
+	at com.sbt.core.transport.rpc.impl.RpcInvokerImpl.callRemoteMethod(RpcInvokerImpl.java:217)
+	at com.sbt.core.transport.client.TransportRequestInterceptor$TransportRequest.execute(TransportRequestInterceptor.java:107)
+	at com.sbt.dul.controllers.GroupService.findOrganization(GroupService.java:86)
+	at com.sbt.dul.utils.Utils.lambda$getClientDto$3(Utils.java:1245)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at com.sbt.dul.utils.Utils.getClientDto(Utils.java:1244)
+	at com.sbt.dul.controllers.ClientRequestListController.fillDto(ClientRequestListController.java:121)
+	at com.sbt.dul.controllers.ClientRequestListController.lambda$getClientRequestList$0(ClientRequestListController.java:71)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1590)
+	... 3 common frames omitted
+2018-02-01 09:38:15 [INFO ] [com.sbt.dul.utils.Utils] [[dul-module]-server-rejected-thread-41] - Выбрали 3 запросов за время - 532430
+2018-02-01 09:38:15 [INFO ] [com.sbt.dul.controllers.ClientRequestListController] [[dul-module]-server-rejected-thread-41] - Обработали запросы
+2018-02-01 09:38:15 [INFO ] [com.sbt.dul.controllers.GroupService] [pool-416-thread-1] - Поиск профилей клиента по id = 1083322271787756950
+2018-02-01 09:38:15 [INFO ] [com.sbt.dul.controllers.GroupService] [pool-421-thread-2] - Поиск профилей клиента по id = 1083322271787756950
+2018-02-01 09:38:15 [INFO ] [com.sbt.dul.controllers.GroupService] [pool-416-thread-6] - Поиск профилей клиента по id = 1083322271787756950
+2018-02-01 09:38:15 [ERROR] [com.sbt.dul.controllers.ProductListController] [pool-421-thread-2] -  Ошибка при получении данных com.sbt.dul.controllers.ProductListController 
+com.sbt.core.amqp.exceptions.UnavailableServiceException: No resources on destination module: [ucp] on node: [grid1395], to process message with messageId: f48c9ade-af16-4e4a-b111-1feb6a4a9ed3
+	at com.sbt.core.transport.server.TransportServiceExporter.onRejectedMessage(TransportServiceExporter.java:154)
+	at com.sbt.core.transport.rpc.impl.RpcExecutorImpl.handleRejectedMessage(RpcExecutorImpl.java:183)
+	at sun.reflect.GeneratedMethodAccessor1786.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322)
+	at com.google.common.eventbus.AsyncEventBus.access$001(AsyncEventBus.java:34)
+	at com.google.common.eventbus.AsyncEventBus$1.run(AsyncEventBus.java:117)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+	at org.springframework.remoting.support.RemoteInvocationUtils.fillInClientStackTraceIfPossible(RemoteInvocationUtils.java:45)
+	at com.sbt.core.transport.commons.rpc.MethodInvocationResult.recreate(MethodInvocationResult.java:57)
+	at com.sbt.core.transport.rpc.impl.RpcInvokerImpl.recreateResult(RpcInvokerImpl.java:1332)
+	at com.sbt.core.transport.rpc.impl.RpcInvokerImpl.access$2900(RpcInvokerImpl.java:53)
+	at com.sbt.core.transport.rpc.impl.RpcInvokerImpl$SyncReply.getResult(RpcInvokerImpl.java:789)
+	at com.sbt.core.transport.rpc.impl.RpcInvokerImpl.callRemoteMethod(RpcInvokerImpl.java:217)
+	at com.sbt.core.transport.client.TransportRequestInterceptor$TransportRequest.execute(TransportRequestInterceptor.java:107)
+	at com.sbt.dul.controllers.GroupService.findOrganization(GroupService.java:86)
+	at com.sbt.dul.utils.Utils.lambda$getClientDto$3(Utils.java:1245)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at com.sbt.dul.utils.Utils.getClientDto(Utils.java:1244)
+	at com.sbt.dul.controllers.ProductListController.getProductDto(ProductListController.java:126)
+	at com.sbt.dul.controllers.ProductListController.getProduct(ProductListController.java:101)
+	at com.sbt.dul.controllers.ProductListController.lambda$fillProductList$0(ProductListController.java:78)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1590)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2018-02-01 09:38:15 [INFO ] [com.sbt.dul.controllers.GroupService] [pool-421-thread-3] - Поиск профилей клиента по id = 1083322271787756950
+2018-02-01 09:38:16 [INFO ] [com.sbt.dul.controllers.GroupService] [pool-421-thread-7] - Поиск профилей клиента по id = 1083322271787756950
+2018-02-01 09:38:16 [ERROR] [com.sbt.dul.controllers.ProductListController] [pool-421-thread-3] -  Ошибка при получении данных com.sbt.dul.controllers.ProductListController 
+com.sbt.core.amqp.exceptions.UnavailableServiceException: No resources on destination module: [ucp] on node: [grid1414], to process message with messageId: 087dc581-b6b6-4aea-a32b-9862b5fa9e56
+	at com.sbt.core.transport.server.TransportServiceExporter.onRejectedMessage(TransportServiceExporter.java:154)
+	at com.sbt.core.transport.rpc.impl.RpcExecutorImpl.handleRejectedMessage(RpcExecutorImpl.java:183)
+	at sun.reflect.GeneratedMethodAccessor1756.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322)
+	at com.google.common.eventbus.AsyncEventBus.access$001(AsyncEventBus.java:34)
+	at com.google.common.eventbus.AsyncEventBus$1.run(AsyncEventBus.java:117)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+	at org.springframework.remoting.support.RemoteInvocationUtils.fillInClientStackTraceIfPossible(RemoteInvocationUtils.java:45)
+	at com.sbt.core.transport.commons.rpc.MethodInvocationResult.recreate(MethodInvocationResult.java:57)
+	at com.sbt.core.transport.rpc.impl.RpcInvokerImpl.recreateResult(RpcInvokerImpl.java:1332)
+	at com.sbt.core.transport.rpc.impl.RpcInvokerImpl.access$2900(RpcInvokerImpl.java:53)
+	at com.sbt.core.transport.rpc.impl.RpcInvokerImpl$SyncReply.getResult(RpcInvokerImpl.java:789)
+	at com.sbt.core.transport.rpc.impl.RpcInvokerImpl.callRemoteMethod(RpcInvokerImpl.java:217)
+	at com.sbt.core.transport.client.TransportRequestInterceptor$TransportRequest.execute(TransportRequestInterceptor.java:107)
+	at com.sbt.dul.controllers.GroupService.findOrganization(GroupService.java:86)
+	at com.sbt.dul.utils.Utils.lambda$getClientDto$3(Utils.java:1245)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at com.sbt.dul.utils.Utils.getClientDto(Utils.java:1244)
+	at com.sbt.dul.controllers.ProductListController.getProductDto(ProductListController.java:126)
+	at com.sbt.dul.controllers.ProductListController.getProduct(ProductListController.java:101)
+	at com.sbt.dul.controllers.ProductListController.lambda$fillProductList$0(ProductListController.java:78)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1590)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2018-02-01 09:38:16 [INFO ] [com.sbt.dul.controllers.ClientRequestListController] [[dul-module]-server-rejected-thread-41] - Время выполнения метода getClientRequestList : 533462
+2018-02-01 09:38:17 [INFO ] [com.sbt.dul.utils.Utils] [[dul-module]-server-rejected-thread-18] - Выбрали 3 продуктов за время - 577266
+2018-02-01 09:38:17 [DEBUG] [com.sbt.dul.controllers.ProductListController] [[dul-module]-server-rejected-thread-18] -    products.asList()= 3
+2018-02-01 09:38:22 [INFO ] [com.sbt.dul.controllers.GroupService] [pool-421-thread-8] - Поиск профилей клиента по id = 1083322271787756950
+2018-02-01 09:38:22 [INFO ] [com.sbt.dul.controllers.ProductListController] [[dul-module]-server-rejected-thread-33] - Отправляем ответ. productList.size = 1
+2018-02-01 09:38:22 [INFO ] [com.sbt.dul.controllers.ProductListController] [[dul-module]-server-rejected-thread-33] - Время выполнения метода getProductList : 684863
+2018-02-01 09:38:23 [INFO ] [com.sbt.dul.controllers.ProductListController] [[dul-module]-server-rejected-thread-18] - Отправляем ответ. productList.size = 3
+2018-02-01 09:38:23 [INFO ] [com.sbt.dul.controllers.ProductListController] [[dul-module]-server-rejected-thread-18] - Время выполнения метода getProductList : 582991
+2018-02-01 09:44:11 [INFO ] [com.sbt.dul.utils.Utils] [[dul-module]-server-rejected-thread-36] - Выбрали 3 запросов за время - 111
+2018-02-01 09:44:11 [INFO ] [com.sbt.dul.controllers.ClientRequestListController] [[dul-module]-server-rejected-thread-36] - Обработали запросы
+2018-02-01 09:44:11 [INFO ] [com.sbt.dul.controllers.GroupService] [pool-416-thread-1] - Поиск профилей клиента по id = 1083322271787756950
+2018-02-01 09:44:11 [INFO ] [com.sbt.dul.controllers.ClientRequestListController] [[dul-module]-server-rejected-thread-36] - Время выполнения метода getClientRequestList : 478
+2018-02-01 09:44:27 [INFO ] [com.sbt.dul.utils.Utils] [[dul-module]-server-rejected-thread-16] - Выбрали 3 продуктов за время - 132
+2018-02-01 09:44:27 [DEBUG] [com.sbt.dul.controllers.ProductListController] [[dul-module]-server-rejected-thread-16] -    products.asList()= 3
+2018-02-01 09:44:27 [INFO ] [com.sbt.dul.controllers.GroupService] [pool-421-thread-7] - Поиск профилей клиента по id = 1083322271787756950
+2018-02-01 09:44:27 [INFO ] [com.sbt.dul.controllers.ProductListController] [[dul-module]-server-rejected-thread-16] - Отправляем ответ. productList.size = 3
+2018-02-01 09:44:27 [INFO ] [com.sbt.dul.controllers.ProductListController] [[dul-module]-server-rejected-thread-16] - Время выполнения метода getProductList : 686
+2018-02-01 09:45:50 [INFO ] [com.sbt.dul.controllers.ProductController] [[dul-module]-server-rejected-thread-34] - Получили {"id":772930286097465377,"appId":-9223372036854766587,"partition":{"type":"com.sbt.bm.ucp.published.api.common.PublishedParty","id":772930286047585378,"appId":1083322271787756950,"partition":{"type":"com.sbt.bm.ucp.published.api.dictionary.PublishedServiceZone","id":1,"appId":1,"idMDMP":1}}}
+2018-02-01 09:45:50 [INFO ] [com.sbt.dul.controllers.ProductController] [[dul-module]-server-rejected-thread-34] - uid : UID[id = 772930286097465377, appId = -9223372036854766587, idMDMP = null, partition = TypedUID[class = com.sbt.bm.ucp.published.api.common.PublishedParty, UID[id = 772930286047585378, appId = 1083322271787756950, idMDMP = null, partition = TypedUID[class = com.sbt.bm.ucp.published.api.dictionary.PublishedServiceZone, UID[id = 1, appId = 1, idMDMP = 1, partition = ]]]]]
+2018-02-01 09:45:50 [INFO ] [com.sbt.dul.controllers.ProductController] [[dul-module]-server-rejected-thread-34] - Выбираем данные по продукту
+2018-02-01 09:45:50 [INFO ] [com.sbt.dul.controllers.GroupService] [[dul-module]-server-rejected-thread-34] - Поиск профилей клиента по id = 1083322271787756950
+2018-02-01 09:45:50 [DEBUG] [com.sbt.dul.utils.Utils] [[dul-module]-server-rejected-thread-34] - Поиск перебором
+2018-02-01 09:45:50 [DEBUG] [com.sbt.dul.utils.Utils] [[dul-module]-server-rejected-thread-34] - Поиск перебором
+2018-02-01 09:45:51 [DEBUG] [com.sbt.dul.utils.Utils] [[dul-module]-server-rejected-thread-34] - Поиск перебором
+2018-02-01 09:45:51 [DEBUG] [com.sbt.dul.utils.Utils] [[dul-module]-server-rejected-thread-34] - Поиск перебором
+2018-02-01 09:45:51 [DEBUG] [com.sbt.dul.utils.Utils] [[dul-module]-server-rejected-thread-34] - Поиск перебором
+2018-02-01 09:45:51 [DEBUG] [com.sbt.dul.utils.Utils] [[dul-module]-server-rejected-thread-34] - Поиск перебором
+2018-02-01 09:45:51 [INFO ] [com.sbt.dul.controllers.ProductController] [[dul-module]-server-rejected-thread-34] - Выбираем данные по уполномоченным
+2018-02-01 09:45:51 [INFO ] [com.sbt.dul.utils.Utils] [[dul-module]-server-rejected-thread-34] - Запрос к УДСИД успешен
+2018-02-01 09:45:51 [INFO ] [com.sbt.dul.utils.Utils] [[dul-module]-server-rejected-thread-34] - apiCall.getResult().size() = 0
+2018-02-01 09:45:51 [ERROR] [com.sbt.dul.utils.Utils] [[dul-module]-server-rejected-thread-34] - Ответ от УДСИД пустой
+2018-02-01 09:45:51 [INFO ] [com.sbt.dul.controllers.ProductController] [[dul-module]-server-rejected-thread-34] - Выбираем данные по запросам
+2018-02-01 09:45:51 [INFO ] [com.sbt.dul.utils.Utils] [[dul-module]-server-rejected-thread-34] - Выбрали 1 запросов за время - 555
+2018-02-01 09:45:51 [INFO ] [com.sbt.dul.controllers.ProductController] [pool-420-thread-3] - Нашли запрос(772930286047463377) относящийся к продукту
+2018-02-01 09:45:51 [INFO ] [com.sbt.dul.controllers.ProductController] [[dul-module]-server-rejected-thread-34] - Выбираем данные по сервисам
+2018-02-01 09:45:51 [INFO ] [com.sbt.dul.controllers.ProductController] [[dul-module]-server-rejected-thread-34] - Выбираем данные по регистрам
+2018-02-01 09:45:51 [INFO ] [com.sbt.dul.controllers.ProductController] [[dul-module]-server-rejected-thread-34] - Отправляем ответ
+2018-02-01 09:46:03 [INFO ] [com.sbt.dul.controllers.ProductController] [[dul-module]-server-rejected-thread-36] - Получили {"id":772930286097464377,"appId":-9223372036854766592,"partition":{"type":"com.sbt.bm.ucp.published.api.common.PublishedParty","id":772930286047585378,"appId":1083322271787756950,"partition":{"type":"com.sbt.bm.ucp.published.api.dictionary.PublishedServiceZone","id":1,"appId":1,"idMDMP":1}}}
+2018-02-01 09:46:03 [INFO ] [com.sbt.dul.controllers.ProductController] [[dul-module]-server-rejected-thread-36] - uid : UID[id = 772930286097464377, appId = -9223372036854766592, idMDMP = null, partition = TypedUID[class = com.sbt.bm.ucp.published.api.common.PublishedParty, UID[id = 772930286047585378, appId = 1083322271787756950, idMDMP = null, partition = TypedUID[class = com.sbt.bm.ucp.published.api.dictionary.PublishedServiceZone, UID[id = 1, appId = 1, idMDMP = 1, partition = ]]]]]
+2018-02-01 09:46:03 [INFO ] [com.sbt.dul.controllers.ProductController] [[dul-module]-server-rejected-thread-36] - Выбираем данные по продукту
+2018-02-01 09:46:03 [INFO ] [com.sbt.dul.controllers.GroupService] [[dul-module]-server-rejected-thread-36] - Поиск профилей клиента по id = 1083322271787756950
+2018-02-01 09:46:03 [DEBUG] [com.sbt.dul.utils.Utils] [[dul-module]-server-rejected-thread-36] - Поиск перебором
+2018-02-01 09:46:03 [DEBUG] [com.sbt.dul.utils.Utils] [[dul-module]-server-rejected-thread-36] - Поиск перебором
+2018-02-01 09:46:03 [DEBUG] [com.sbt.dul.utils.Utils] [[dul-module]-server-rejected-thread-36] - Поиск перебором
+2018-02-01 09:46:03 [DEBUG] [com.sbt.dul.utils.Utils] [[dul-module]-server-rejected-thread-36] - Поиск перебором
+2018-02-01 09:46:04 [DEBUG] [com.sbt.dul.utils.Utils] [[dul-module]-server-rejected-thread-36] - Поиск перебором
+2018-02-01 09:46:04 [DEBUG] [com.sbt.dul.utils.Utils] [[dul-module]-server-rejected-thread-36] - Поиск перебором
+2018-02-01 09:46:04 [INFO ] [com.sbt.dul.controllers.ProductController] [[dul-module]-server-rejected-thread-36] - Выбираем данные по уполномоченным
+2018-02-01 09:46:04 [INFO ] [com.sbt.dul.utils.Utils] [[dul-module]-server-rejected-thread-36] - Запрос к УДСИД успешен
+2018-02-01 09:46:04 [INFO ] [com.sbt.dul.utils.Utils] [[dul-module]-server-rejected-thread-36] - apiCall.getResult().size() = 0
+2018-02-01 09:46:04 [ERROR] [com.sbt.dul.utils.Utils] [[dul-module]-server-rejected-thread-36] - Ответ от УДСИД пустой
+2018-02-01 09:46:04 [INFO ] [com.sbt.dul.controllers.ProductController] [[dul-module]-server-rejected-thread-36] - Выбираем данные по запросам
+2018-02-01 09:46:04 [INFO ] [com.sbt.dul.utils.Utils] [[dul-module]-server-rejected-thread-36] - Выбрали 1 запросов за время - 13
+2018-02-01 09:46:04 [INFO ] [com.sbt.dul.controllers.ProductController] [pool-420-thread-3] - Нашли запрос(772930286047462377) относящийся к продукту
+2018-02-01 09:46:04 [INFO ] [com.sbt.dul.controllers.ProductController] [[dul-module]-server-rejected-thread-36] - Выбираем данные по сервисам
+2018-02-01 09:46:04 [INFO ] [com.sbt.dul.controllers.ProductController] [[dul-module]-server-rejected-thread-36] - Выбираем данные по регистрам
+2018-02-01 09:46:04 [INFO ] [com.sbt.dul.controllers.ProductController] [[dul-module]-server-rejected-thread-36] - Отправляем ответ
+2018-02-01 11:09:40 [WARN ] [com.sbt.dul.impl.MigrationService] [[dul-module]-server-rejected-thread-8] - Начало обработки события, полученного от миграционного модуля
+2018-02-01 11:09:40 [DEBUG] [com.sbt.dul.utils.Utils] [[dul-module]-server-rejected-thread-8] - Получение результата выполнения API
+2018-02-01 11:09:40 [WARN ] [com.sbt.dul.maintenance.MaintenanceDUL] [[dul-module]-server-rejected-thread-8] - 
++++++++++++++++
+Запуск сервиса пополнения. ID продукта: -9223372036854766592
++++++++++++++++
+
+2018-02-01 11:09:40 [DEBUG] [com.sbt.dul.maintenance.MaintenanceDUL] [[dul-module]-server-rejected-thread-8] -  bgpRepositoryInfoJson= {"bgpRepositoryId":0,"bgpJournalId":null,"serviceCode":"MANUAL_START","startDate":1517472580711,"endDate":1517472580711,"previousServiceAppId":null,"broken":false}
+2018-02-01 11:09:44 [DEBUG] [com.sbt.dul.utils.Utils] [[dul-module]-server-rejected-thread-8] - Получение результата выполнения API
+2018-02-01 11:09:44 [DEBUG] [com.sbt.dul.utils.Utils] [[dul-module]-server-rejected-thread-8] - Получение результата выполнения API
+2018-02-01 11:09:44 [WARN ] [com.sbt.dul.maintenance.MaintenanceDUL] [[dul-module]-server-rejected-thread-8] - [-9223372036854775664] >>> запуск сервиса на КБТ
+2018-02-01 11:09:47 [WARN ] [com.sbt.dul.utils.AbstractActionAdapter] [[dul-module]-server-rejected-thread-40] - [-9223372036854775666] : com.sbt.dul.actions.DULFillCtxGraphRegistrAction : 1 : 1083322271787756950 : -9223372036854766587 
+IN ====> productId = UID[id = 772930286097464377, appId = -9223372036854766592, idMDMP = null, partition = TypedUID[class = com.sbt.bm.ucp.published.api.common.PublishedParty, UID[id = 772930286047585378, appId = 1083322271787756950, idMDMP = null, partition = TypedUID[class = com.sbt.bm.ucp.published.api.dictionary.PublishedServiceZone, UID[id = 1, appId = 1, idMDMP = 1, partition = ]]]]] 
+IN ====> registerTypeCode = DEP_UL 
+
+2018-02-01 11:09:47 [WARN ] [com.sbt.dul.utils.AbstractActionAdapter] [[dul-module]-server-rejected-thread-40] - [-9223372036854775664] : com.sbt.dul.actions.DULFillCtxGraphRegistrAction : 1 : 1083322271787756950 : -9223372036854766592 Action: FillCtxGraphRegistrAction start.
+2018-02-01 11:09:47 [WARN ] [com.sbt.dul.utils.AbstractActionAdapter] [[dul-module]-server-rejected-thread-40] - [-9223372036854775664] : com.sbt.dul.actions.DULFillCtxGraphRegistrAction : 1 : 1083322271787756950 : -9223372036854766592 Action: FillCtxGraphRegistrAction successfully completed.
+2018-02-01 11:09:47 [WARN ] [com.sbt.dul.utils.AbstractActionAdapter] [[dul-module]-server-rejected-thread-40] - [-9223372036854775664] : com.sbt.dul.actions.DULFillCtxGraphRegistrAction : 1 : 1083322271787756950 : -9223372036854766592 
+OUT <==== registerId = UID[id = 772930286097464377, appId = -9223372036854766432, idMDMP = null, partition = TypedUID[class = com.sbt.bm.ucp.published.api.common.PublishedParty, UID[id = 772930286047585378, appId = 1083322271787756950, idMDMP = null, partition = TypedUID[class = com.sbt.bm.ucp.published.api.dictionary.PublishedServiceZone, UID[id = 1, appId = 1, idMDMP = 1, partition = ]]]]] 
+OUT <==== registerDate = Thu Feb 01 11:09:47 MSK 2018 
+
+2018-02-01 11:09:49 [WARN ] [com.sbt.dul.utils.AbstractActionAdapter] [[dul-module]-server-rejected-thread-28] - [-9223372036854775666] : com.sbt.dul.actions.UpdateRegisterAction : 1 : 1083322271787756950 : -9223372036854766587 
+IN ====> registerId = UID[id = 772930286097464377, appId = -9223372036854766432, idMDMP = null, partition = TypedUID[class = com.sbt.bm.ucp.published.api.common.PublishedParty, UID[id = 772930286047585378, appId = 1083322271787756950, idMDMP = null, partition = TypedUID[class = com.sbt.bm.ucp.published.api.dictionary.PublishedServiceZone, UID[id = 1, appId = 1, idMDMP = 1, partition = ]]]]] 
+IN ====> operationDate = Tue Jan 30 00:00:00 MSK 2018 
+IN ====> summaOperation = 1 
+IN ====> chargeOffAmount = 1 
+
+2018-02-01 11:09:49 [WARN ] [com.sbt.dul.utils.AbstractActionAdapter] [[dul-module]-server-rejected-thread-28] - [-9223372036854775664] : com.sbt.dul.actions.UpdateMovementRegisterAction : 1 : 1083322271787756950 : -9223372036854766592 Action: UpdateMovementRegister start.
+2018-02-01 11:09:51 [WARN ] [com.sbt.dul.utils.audit.AuditUtils] [[dul-module]-server-rejected-thread-28] - Старт аудита проводки движения на регистре. Клиент: no-principal; module: dul-module
+2018-02-01 11:09:51 [WARN ] [com.sbt.dul.utils.audit.AuditUtils] [[dul-module]-server-rejected-thread-28] - Конец аудита проводки движения на регистре. Клиент: no-principal; module: dul-module
+2018-02-01 11:09:51 [WARN ] [com.sbt.dul.utils.AbstractActionAdapter] [[dul-module]-server-rejected-thread-28] - [-9223372036854775664] : com.sbt.dul.actions.UpdateMovementRegisterAction : 1 : 1083322271787756950 : -9223372036854766592 Action: UpdateMovementRegister successfully completed.
+2018-02-01 11:09:51 [WARN ] [com.sbt.dul.utils.AbstractActionAdapter] [[dul-module]-server-rejected-thread-28] - [-9223372036854775664] : com.sbt.dul.actions.UpdateMovementRegisterAction : 1 : 1083322271787756950 : -9223372036854766592 
+
+2018-02-01 11:09:54 [WARN ] [com.sbt.dul.utils.AbstractActionAdapter] [[dul-module]-server-rejected-thread-19] - [-9223372036854775664] : com.sbt.dul.actions.DULFillCtxGraphRegistrAction : 1 : 1083322271787756950 : -9223372036854766592 
+IN ====> productId = UID[id = 772930286097464377, appId = -9223372036854766592, idMDMP = null, partition = TypedUID[class = com.sbt.bm.ucp.published.api.common.PublishedParty, UID[id = 772930286047585378, appId = 1083322271787756950, idMDMP = null, partition = TypedUID[class = com.sbt.bm.ucp.published.api.dictionary.PublishedServiceZone, UID[id = 1, appId = 1, idMDMP = 1, partition = ]]]]] 
+IN ====> registerId = UID[id = 772930286097464377, appId = -9223372036854766432, idMDMP = null, partition = TypedUID[class = com.sbt.bm.ucp.published.api.common.PublishedParty, UID[id = 772930286047585378, appId = 1083322271787756950, idMDMP = null, partition = TypedUID[class = com.sbt.bm.ucp.published.api.dictionary.PublishedServiceZone, UID[id = 1, appId = 1, idMDMP = 1, partition = ]]]]] 
+IN ====> operationDate = Tue Jan 30 00:00:00 MSK 2018 
+
+2018-02-01 11:09:54 [WARN ] [com.sbt.dul.utils.AbstractActionAdapter] [[dul-module]-server-rejected-thread-19] - [-9223372036854775664] : com.sbt.dul.actions.AdjunctionFillContextAction : 1 : 1083322271787756950 : -9223372036854766592 Action: AdjunctionFillContextAction start.
+2018-02-01 11:09:54 [DEBUG] [com.sbt.dul.utils.Utils] [[dul-module]-server-rejected-thread-19] - Получение результата выполнения API
+2018-02-01 11:09:54 [WARN ] [com.sbt.dul.utils.AbstractActionAdapter] [[dul-module]-server-rejected-thread-19] - [-9223372036854775664] : com.sbt.dul.actions.AdjunctionFillContextAction : 1 : 1083322271787756950 : -9223372036854766592 Action: AdjunctionFillContextAction successfully completed.
+2018-02-01 11:09:54 [WARN ] [com.sbt.dul.utils.AbstractActionAdapter] [[dul-module]-server-rejected-thread-19] - [-9223372036854775664] : com.sbt.dul.actions.AdjunctionFillContextAction : 1 : 1083322271787756950 : -9223372036854766592 
+OUT <==== curBalance = 2 
+OUT <==== curProductStatusCode = productParty_dulReadyToClose 
+OUT <==== summaDUL = 1 
+OUT <==== durationDUL = 7 
+OUT <==== dateBeginDUL = Tue Jan 30 00:00:00 MSK 2018 
+OUT <==== dateEndDUL = Tue Feb 06 00:00:00 MSK 2018 
+
+2018-02-01 11:18:04 [DEBUG] [com.sbt.dul.utils.Utils] [[dul-module]-server-rejected-thread-8] - Получение результата выполнения API
+2018-02-01 11:18:04 [DEBUG] [com.sbt.dul.utils.Utils] [[dul-module]-server-rejected-thread-8] - Получение результата выполнения API
+2018-02-01 11:18:05 [DEBUG] [com.sbt.dul.utils.Utils] [[dul-module]-server-rejected-thread-8] - Получение результата выполнения API
+2018-02-01 11:18:05 [ERROR] [com.sbt.dul.maintenance.MaintenanceDUL] [[dul-module]-server-rejected-thread-8] - Не удалось выполнить сервис DULadjunctionServiceClassicOnlineIP: {}
+com.sbt.cdm.api.service.exception.ServiceExecutionException: com.sbt.core.amqp.exceptions.TransportTimeoutException: Execution timeout. message.id: f90ead36-b71b-4cce-a7ef-6f87e3eea843
+	at com.sbt.dul.maintenance.MaintenanceDUL.runService(MaintenanceDUL.java:919)
+	at com.sbt.dul.maintenance.MaintenanceDUL.safeRunService(MaintenanceDUL.java:886)
+	at com.sbt.dul.maintenance.MaintenanceDUL.safePrepareSCandRunService(MaintenanceDUL.java:808)
+	at com.sbt.dul.maintenance.MaintenanceDUL.safePrepareSCandRunService(MaintenanceDUL.java:776)
+	at com.sbt.dul.maintenance.MaintenanceDUL.prepareAndRunAdjunctionDul(MaintenanceDUL.java:257)
+	at com.sbt.dul.impl.MigrationService.prepareAndRunAdjunctionService(MigrationService.java:292)
+	at com.sbt.dul.impl.MigrationService.choseAndRunService(MigrationService.java:359)
+	at com.sbt.dul.impl.MigrationService.sendToReceiver(MigrationService.java:98)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.sbt.core.transport.utils.CBLUtils.changeClassLoaderAndInvoke(CBLUtils.java:17)
+	at com.sbt.core.transport.server.TransportServiceExporter.invoke(TransportServiceExporter.java:248)
+	at com.sbt.core.transport.server.TransportServiceExporter.onMessage(TransportServiceExporter.java:109)
+	at com.sbt.core.transport.rpc.impl.RpcExecutorImpl.handleMessage(RpcExecutorImpl.java:131)
+	at com.sbt.core.transport.rpc.impl.RpcExecutorImpl.handleMessage(RpcExecutorImpl.java:151)
+	at sun.reflect.GeneratedMethodAccessor1020.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322)
+	at com.google.common.eventbus.AsyncEventBus.access$001(AsyncEventBus.java:34)
+	at com.google.common.eventbus.AsyncEventBus$1.run(AsyncEventBus.java:117)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.sbt.core.amqp.exceptions.TransportTimeoutException: Execution timeout. message.id: f90ead36-b71b-4cce-a7ef-6f87e3eea843
+	at com.sbt.core.transport.rpc.impl.RpcInvokerImpl$SyncReply.getResult(RpcInvokerImpl.java:773)
+	at com.sbt.core.transport.rpc.impl.RpcInvokerImpl.callRemoteMethod(RpcInvokerImpl.java:217)
+	at com.sbt.core.transport.client.TransportRequestInterceptor$TransportRequest.execute(TransportRequestInterceptor.java:107)
+	at com.sbt.dul.maintenance.MaintenanceDUL.runServiceInOrchestration(MaintenanceDUL.java:975)
+	at com.sbt.dul.maintenance.MaintenanceDUL.runService(MaintenanceDUL.java:909)
+	... 26 common frames omitted
+2018-02-01 11:18:05 [ERROR] [com.sbt.dul.maintenance.MaintenanceDUL] [[dul-module]-server-rejected-thread-8] - UID[id = 772930286097464377, appId = -9223372036854766592, idMDMP = null, partition = TypedUID[class = com.sbt.bm.ucp.published.api.common.PublishedParty, UID[id = 772930286047585378, appId = 1083322271787756950, idMDMP = null, partition = TypedUID[class = com.sbt.bm.ucp.published.api.dictionary.PublishedServiceZone, UID[id = 1, appId = 1, idMDMP = 1, partition = ]]]]]:obj is null Сервис DULadjunctionServiceClassicOnlineIP не отработал.
+2018-02-01 11:18:05 [DEBUG] [com.sbt.dul.utils.Utils] [[dul-module]-server-rejected-thread-8] - Получение результата выполнения API
+2018-02-01 11:18:05 [ERROR] [com.sbt.dul.maintenance.MaintenanceDUL] [[dul-module]-server-rejected-thread-8] - Сервис DULadjunctionServiceClassicOnlineIP не отработал на продукте UID[id = 772930286097464377, appId = -9223372036854766592, idMDMP = null, partition = TypedUID[class = com.sbt.bm.ucp.published.api.common.PublishedParty, UID[id = 772930286047585378, appId = 1083322271787756950, idMDMP = null, partition = TypedUID[class = com.sbt.bm.ucp.published.api.dictionary.PublishedServiceZone, UID[id = 1, appId = 1, idMDMP = 1, partition = ]]]]].
+2018-02-01 11:18:05 [ERROR] [com.sbt.dul.maintenance.MaintenanceDUL] [[dul-module]-server-rejected-thread-8] - Сервис DULadjunctionService не отработал на продукте -9223372036854766592.
+2018-02-01 11:18:05 [ERROR] [com.sbt.dul.impl.MigrationService] [[dul-module]-server-rejected-thread-8] - -9223372036854766592 : null Возникла проблема с сервисом зачисления депозита
+2018-02-01 11:18:28 [WARN ] [com.sbt.dul.impl.MigrationService] [[dul-module]-server-rejected-thread-13] - Начало обработки события, полученного от миграционного модуля
+2018-02-01 11:18:29 [DEBUG] [com.sbt.dul.utils.Utils] [[dul-module]-server-rejected-thread-13] - Получение результата выполнения API
+2018-02-01 11:18:29 [WARN ] [com.sbt.dul.maintenance.MaintenanceDUL] [[dul-module]-server-rejected-thread-13] - 
++++++++++++++++
+Запуск сервиса пополнения. ID продукта: -9223372036854766592
++++++++++++++++
+
+2018-02-01 11:18:29 [DEBUG] [com.sbt.dul.maintenance.MaintenanceDUL] [[dul-module]-server-rejected-thread-13] -  bgpRepositoryInfoJson= {"bgpRepositoryId":0,"bgpJournalId":null,"serviceCode":"MANUAL_START","startDate":1517473109155,"endDate":1517473109155,"previousServiceAppId":null,"broken":false}
+2018-02-01 11:18:31 [DEBUG] [com.sbt.dul.utils.Utils] [[dul-module]-server-rejected-thread-13] - Получение результата выполнения API
+2018-02-01 11:18:31 [DEBUG] [com.sbt.dul.utils.Utils] [[dul-module]-server-rejected-thread-13] - Получение результата выполнения API
+2018-02-01 11:18:31 [WARN ] [com.sbt.dul.maintenance.MaintenanceDUL] [[dul-module]-server-rejected-thread-13] - [-9223372036854775663] >>> запуск сервиса на КБТ
+2018-02-01 11:18:33 [WARN ] [com.sbt.dul.utils.AbstractActionAdapter] [[dul-module]-server-rejected-thread-38] - [-9223372036854775664] : com.sbt.dul.actions.UpdateMovementRegisterAction : 1 : 1083322271787756950 : -9223372036854766592 
+IN ====> productId = UID[id = 772930286097464377, appId = -9223372036854766592, idMDMP = null, partition = TypedUID[class = com.sbt.bm.ucp.published.api.common.PublishedParty, UID[id = 772930286047585378, appId = 1083322271787756950, idMDMP = null, partition = TypedUID[class = com.sbt.bm.ucp.published.api.dictionary.PublishedServiceZone, UID[id = 1, appId = 1, idMDMP = 1, partition = ]]]]] 
+IN ====> registerTypeCode = DEP_UL 
+
+2018-02-01 11:18:33 [WARN ] [com.sbt.dul.utils.AbstractActionAdapter] [[dul-module]-server-rejected-thread-38] - [-9223372036854775663] : com.sbt.dul.actions.DULFillCtxGraphRegistrAction : 1 : 1083322271787756950 : -9223372036854766592 Action: FillCtxGraphRegistrAction start.
+2018-02-01 11:18:33 [WARN ] [com.sbt.dul.utils.AbstractActionAdapter] [[dul-module]-server-rejected-thread-38] - [-9223372036854775663] : com.sbt.dul.actions.DULFillCtxGraphRegistrAction : 1 : 1083322271787756950 : -9223372036854766592 Action: FillCtxGraphRegistrAction successfully completed.
+2018-02-01 11:18:33 [WARN ] [com.sbt.dul.utils.AbstractActionAdapter] [[dul-module]-server-rejected-thread-38] - [-9223372036854775663] : com.sbt.dul.actions.DULFillCtxGraphRegistrAction : 1 : 1083322271787756950 : -9223372036854766592 
+OUT <==== registerId = UID[id = 772930286097464377, appId = -9223372036854766432, idMDMP = null, partition = TypedUID[class = com.sbt.bm.ucp.published.api.common.PublishedParty, UID[id = 772930286047585378, appId = 1083322271787756950, idMDMP = null, partition = TypedUID[class = com.sbt.bm.ucp.published.api.dictionary.PublishedServiceZone, UID[id = 1, appId = 1, idMDMP = 1, partition = ]]]]] 
+OUT <==== registerDate = Thu Feb 01 11:18:33 MSK 2018 
+
+2018-02-01 11:18:35 [WARN ] [com.sbt.dul.utils.AbstractActionAdapter] [[dul-module]-server-rejected-thread-44] - [-9223372036854775664] : com.sbt.dul.actions.AdjunctionFillContextAction : 1 : 1083322271787756950 : -9223372036854766592 
+IN ====> registerId = UID[id = 772930286097464377, appId = -9223372036854766432, idMDMP = null, partition = TypedUID[class = com.sbt.bm.ucp.published.api.common.PublishedParty, UID[id = 772930286047585378, appId = 1083322271787756950, idMDMP = null, partition = TypedUID[class = com.sbt.bm.ucp.published.api.dictionary.PublishedServiceZone, UID[id = 1, appId = 1, idMDMP = 1, partition = ]]]]] 
+IN ====> operationDate = Tue Jan 30 00:00:00 MSK 2018 
+IN ====> summaOperation = 1 
+IN ====> chargeOffAmount = 1 
+
+2018-02-01 11:18:35 [WARN ] [com.sbt.dul.utils.AbstractActionAdapter] [[dul-module]-server-rejected-thread-44] - [-9223372036854775663] : com.sbt.dul.actions.UpdateMovementRegisterAction : 1 : 1083322271787756950 : -9223372036854766592 Action: UpdateMovementRegister start.
+2018-02-01 11:18:37 [WARN ] [com.sbt.dul.utils.audit.AuditUtils] [[dul-module]-server-rejected-thread-44] - Старт аудита проводки движения на регистре. Клиент: no-principal; module: dul-module
+2018-02-01 11:18:37 [WARN ] [com.sbt.dul.utils.audit.AuditUtils] [[dul-module]-server-rejected-thread-44] - Конец аудита проводки движения на регистре. Клиент: no-principal; module: dul-module
+2018-02-01 11:18:37 [WARN ] [com.sbt.dul.utils.AbstractActionAdapter] [[dul-module]-server-rejected-thread-44] - [-9223372036854775663] : com.sbt.dul.actions.UpdateMovementRegisterAction : 1 : 1083322271787756950 : -9223372036854766592 Action: UpdateMovementRegister successfully completed.
+2018-02-01 11:18:37 [WARN ] [com.sbt.dul.utils.AbstractActionAdapter] [[dul-module]-server-rejected-thread-44] - [-9223372036854775663] : com.sbt.dul.actions.UpdateMovementRegisterAction : 1 : 1083322271787756950 : -9223372036854766592 
+
+2018-02-01 11:18:39 [WARN ] [com.sbt.dul.utils.AbstractActionAdapter] [[dul-module]-server-rejected-thread-11] - [-9223372036854775663] : com.sbt.dul.actions.DULFillCtxGraphRegistrAction : 1 : 1083322271787756950 : -9223372036854766592 
+IN ====> productId = UID[id = 772930286097464377, appId = -9223372036854766592, idMDMP = null, partition = TypedUID[class = com.sbt.bm.ucp.published.api.common.PublishedParty, UID[id = 772930286047585378, appId = 1083322271787756950, idMDMP = null, partition = TypedUID[class = com.sbt.bm.ucp.published.api.dictionary.PublishedServiceZone, UID[id = 1, appId = 1, idMDMP = 1, partition = ]]]]] 
+IN ====> registerId = UID[id = 772930286097464377, appId = -9223372036854766432, idMDMP = null, partition = TypedUID[class = com.sbt.bm.ucp.published.api.common.PublishedParty, UID[id = 772930286047585378, appId = 1083322271787756950, idMDMP = null, partition = TypedUID[class = com.sbt.bm.ucp.published.api.dictionary.PublishedServiceZone, UID[id = 1, appId = 1, idMDMP = 1, partition = ]]]]] 
+IN ====> operationDate = Tue Jan 30 00:00:00 MSK 2018 
+
+2018-02-01 11:18:39 [WARN ] [com.sbt.dul.utils.AbstractActionAdapter] [[dul-module]-server-rejected-thread-11] - [-9223372036854775663] : com.sbt.dul.actions.AdjunctionFillContextAction : 1 : 1083322271787756950 : -9223372036854766592 Action: AdjunctionFillContextAction start.
+2018-02-01 11:18:39 [DEBUG] [com.sbt.dul.utils.Utils] [[dul-module]-server-rejected-thread-11] - Получение результата выполнения API
+2018-02-01 11:18:39 [WARN ] [com.sbt.dul.utils.AbstractActionAdapter] [[dul-module]-server-rejected-thread-11] - [-9223372036854775663] : com.sbt.dul.actions.AdjunctionFillContextAction : 1 : 1083322271787756950 : -9223372036854766592 Action: AdjunctionFillContextAction successfully completed.
+2018-02-01 11:18:39 [WARN ] [com.sbt.dul.utils.AbstractActionAdapter] [[dul-module]-server-rejected-thread-11] - [-9223372036854775663] : com.sbt.dul.actions.AdjunctionFillContextAction : 1 : 1083322271787756950 : -9223372036854766592 
+OUT <==== curBalance = 3 
+OUT <==== curProductStatusCode = productParty_dulReadyToClose 
+OUT <==== summaDUL = 1 
+OUT <==== durationDUL = 7 
+OUT <==== dateBeginDUL = Tue Jan 30 00:00:00 MSK 2018 
+OUT <==== dateEndDUL = Tue Feb 06 00:00:00 MSK 2018 
+
