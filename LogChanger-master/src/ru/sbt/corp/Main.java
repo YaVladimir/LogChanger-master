@@ -9,30 +9,39 @@ import java.nio.file.StandardOpenOption;
 import java.text.ParsePosition;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Date;
 import java.util.List;
+import java.util.concurrent.*;
+import java.util.logging.Logger;
 
 public class Main {
     private static final String FILE_NAME_RESULT = "result.txt";
     private static final SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
     private static final SimpleDateFormat formatResult = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss");
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ExecutionException, InterruptedException {
         File file = new File(".");
         File[] files = file.listFiles((dir, name) -> name.startsWith("dul") && name.endsWith(".log"));
+        ExecutorService threadPool = Executors.newFixedThreadPool(8);
         if (files != null) {
             try {
+                List<Future<List<String>>> futures = new ArrayList<>();
                 List<String> logResult = new ArrayList<>();
+
                 for (File file1 : files) {
-                    List<String> stringsFile = Files.readAllLines(file1.toPath(), StandardCharsets.UTF_8);
-                    List<String> stringsLogs = getLogs(stringsFile);
-                    logResult.addAll(stringsLogs);
-                    logResult.sort((o1, o2) -> {
-                        Date parseDateOne = format.parse(o1, new ParsePosition(0));
-                        Date parseDateTwo = format.parse(o2, new ParsePosition(0));
-                        return parseDateOne.compareTo(parseDateTwo);
-                    });
+                    futures.add(CompletableFuture.supplyAsync(() -> getLogs(file1), threadPool));
                 }
+
+                for (Future<List<String>> future : futures) {
+                    logResult.addAll(future.get());
+                }
+                threadPool.shutdown();
+                logResult.sort((o1, o2) -> {
+                    Date parseDateOne = format.parse(o1, new ParsePosition(0));
+                    Date parseDateTwo = format.parse(o2, new ParsePosition(0));
+                    return parseDateOne.compareTo(parseDateTwo);
+                });
                 Date lastChangeDate = format.parse(logResult.get(logResult.size() - 1), new ParsePosition(0));
                 String formatDate = Main.formatResult.format(lastChangeDate);
                 String fileNameResult = formatDate + "_" + FILE_NAME_RESULT;
@@ -43,7 +52,14 @@ public class Main {
         }
     }
 
-    private static List<String> getLogs(List<String> list) {
+    private static List<String> getLogs(File file) {
+        List<String> list = Collections.emptyList();
+        try {
+            list = Files.readAllLines(file.toPath(), StandardCharsets.UTF_8);
+        } catch (IOException e) {
+            Logger.getLogger(Main.class.getName()).info("Ошибка при парсинге файла");
+            e.printStackTrace();
+        }
         int j = 0;
         List<String> logs = new ArrayList<>();
         for (String aList : list) {
