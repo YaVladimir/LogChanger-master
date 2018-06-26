@@ -23,8 +23,8 @@ public class Main {
         if (files != null) {
             try {
                 List<String> logResult = new ArrayList<>();
-                for (int i = 0; i < files.length; i++) {
-                    List<String> stringsFile = Files.readAllLines(files[i].toPath(), StandardCharsets.UTF_8);
+                for (File file1 : files) {
+                    List<String> stringsFile = Files.readAllLines(file1.toPath(), StandardCharsets.UTF_8);
                     List<String> stringsLogs = getLogs(stringsFile);
                     logResult.addAll(stringsLogs);
                     logResult.sort((o1, o2) -> {
@@ -33,11 +33,10 @@ public class Main {
                         return parseDateOne.compareTo(parseDateTwo);
                     });
                 }
-                Date date = new Date();
-                String formatDate = Main.formatResult.format(date);
+                Date lastChangeDate = format.parse(logResult.get(logResult.size() - 1), new ParsePosition(0));
+                String formatDate = Main.formatResult.format(lastChangeDate);
                 String fileNameResult = formatDate + "_" + FILE_NAME_RESULT;
-                Files.write(Paths.get(fileNameResult), logResult, StandardOpenOption.CREATE_NEW, StandardOpenOption.WRITE);
-
+                Files.write(Paths.get(fileNameResult), logResult, StandardOpenOption.CREATE, StandardOpenOption.WRITE);
             } catch (IOException e) {
                 e.printStackTrace();
             }
