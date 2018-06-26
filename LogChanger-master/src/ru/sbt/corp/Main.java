@@ -14,7 +14,7 @@ import java.util.List;
 
 public class Main {
     private static final String FILE_NAME_RESULT = "result.txt";
-    private static final SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+    private static final SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
     private static final SimpleDateFormat formatResult = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss");
 
     public static void main(String[] args) {
