@@ -8,10 +8,7 @@ import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 import java.text.ParsePosition;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 import java.util.concurrent.*;
 import java.util.logging.Logger;
 
@@ -19,6 +16,7 @@ public class Main {
     private static final String FILE_NAME_RESULT = "result.txt";
     private static final SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
     private static final SimpleDateFormat formatResult = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss");
+    private static final Calendar calendar = Calendar.getInstance();
 
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         File file = new File(".");
@@ -36,6 +34,7 @@ public class Main {
                 for (Future<List<String>> future : futures) {
                     logResult.addAll(future.get());
                 }
+
                 threadPool.shutdown();
                 logResult.sort((o1, o2) -> {
                     Date parseDateOne = format.parse(o1, new ParsePosition(0));
@@ -63,7 +62,7 @@ public class Main {
         int j = 0;
         List<String> logs = new ArrayList<>();
         for (String aList : list) {
-            if (!aList.equals("") && aList.startsWith("2018")) {
+            if (!aList.equals("") && aList.startsWith(String.valueOf(calendar.get(Calendar.YEAR)))) {
                 logs.add(j, aList);
                 j++;
             } else {
