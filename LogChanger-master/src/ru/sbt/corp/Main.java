@@ -19,8 +19,15 @@ public class Main {
     private static final Calendar calendar = Calendar.getInstance();
 
     public static void main(String[] args) throws ExecutionException, InterruptedException {
+        if (args.length != 3) {
+            throw new IllegalArgumentException("Недостаточно аргументов в командной строке");
+        }
+        String filename1 = args[0];
+        String filename2 = args[1];
+        String filenameRes = args[2];
+        long beginTime = System.currentTimeMillis();
         File file = new File(".");
-        File[] files = file.listFiles((dir, name) -> name.startsWith("dul") && name.endsWith(".log"));
+        File[] files = file.listFiles((dir, name) -> name.contains(filename1) || name.contains(filename2));
         ExecutorService threadPool = Executors.newFixedThreadPool(8);
         if (files != null) {
             try {
@@ -44,11 +51,13 @@ public class Main {
                 Date lastChangeDate = format.parse(logResult.get(logResult.size() - 1), new ParsePosition(0));
                 String formatDate = Main.formatResult.format(lastChangeDate);
                 String fileNameResult = formatDate + "_" + FILE_NAME_RESULT;
-                Files.write(Paths.get(fileNameResult), logResult, StandardOpenOption.CREATE, StandardOpenOption.WRITE);
+                Files.write(Paths.get(filenameRes != null ? filenameRes : fileNameResult),
+                        logResult, StandardOpenOption.CREATE, StandardOpenOption.WRITE);
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
+        System.out.println(System.currentTimeMillis() - beginTime);
     }
 
     private static List<String> getLogs(File file) {
@@ -67,8 +76,7 @@ public class Main {
                 j++;
             } else {
                 String newString = logs.get(j - 1);
-                newString = newString.concat("\n");
-                newString = newString.concat(aList);
+                newString = newString.concat("\n").concat(aList);
                 logs.remove(j - 1);
                 logs.add(j - 1, newString);
             }
@@ -87,8 +95,7 @@ public class Main {
             String newDate = newStringBuilder.substring(0, 19);
             if (newDate.equals(oldDate)) {
                 String newString = modifyList.get(j);
-                newString = newString.concat("\n");
-                newString = newString.concat(list.get(i));
+                newString = newString.concat("\n").concat(list.get(i));
                 modifyList.remove(j);
                 modifyList.add(j, newString);
             } else {
